@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <title>Firebase</title>
+</head>
+
+<body>
+
+    <h1 class="notifications fillall">Fill All Fields</h1>
+    <h1 class="notifications inserted">הוספת מוצר התבצעה בשלום</h1>
+
+    <div class="comtainer">
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <h1 class="logo">Golden Grill</h1>
+            <select name="category">
+                <option value="category1">רק היום</option>
+                <option value="category2">המבורגר</option>
+                <option value="category3">תופות לבורגר</option>
+                <option value="category4">אגריל</option>
+                <option value="category5">ליד</option>
+                <option value="category6">שתיה</option>
+            </select>
+            <input type="text" name="title" placeholder="שמ מוצר" style="text-align: end;">
+            <input type="number" name="price" placeholder="מחיר" style="text-align: end;">
+            <input type="text" name="comint" placeholder="תיאור" style="text-align: end;">
+            <input type="number" name="time" placeholder="זמן הכנה" style="text-align: end;">
+            <input type="file" name="image">
+            <input type="submit" name="submit" value="תוסיף">
+        </form>
+    </div>
+
+
+    <div class="menu" id="menu">
+        <h1>רק היום</h1>
+        <div class="category1"></div>
+        <h1>המבורגר</h1>
+        <div class="category2"></div>
+        <h1>תופות לבורגר</h1>
+        <div class="category3"></div>
+        <h1>אגריל</h1>
+        <div class="category4"></div>
+        <h1>ליד</h1>
+        <div class="category5"></div>
+        <h1>שתיה</h1>
+        <div class="category6"></div>
+    </div>
+
+
+    <script src="menu.js"></script>
+    <script src="firebase.js"></script>
+
+
+</body>
+
+</html>

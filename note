@@ -1,0 +1,21 @@
+            let input = document.querySelector(".form-control");
+            let input2 = document.querySelector(".pho");
+
+            input.addEventListener("change", total());
+            input2.addEventListener("change", total());
+
+
+
+
+
+
+
+
+                            if (document.getElementById("fullname").value == null || document.querySelector("phone").value == null) {
+
+                    $('.send-oreder').slideDown(); //button remains disabled
+                } else {
+                    //button is enabled
+                    $('.send-oreder').slideUp();
+
+                }
